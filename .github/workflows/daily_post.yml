@@ -2,9 +2,10 @@ name: Facebook Daily Post
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 5 * * *'   # 매일 14:00 KST
-    - cron: '0 11 * * *'  # 매일 20:00 KST
+  # 텍스트 전용 게시 중단 — threads_auto의 명언 영상 재사용 게시로 대체됨
+  # schedule:
+  #   - cron: '0 5 * * *'   # 매일 14:00 KST
+  #   - cron: '0 11 * * *'  # 매일 20:00 KST
 
 jobs:
   post:
